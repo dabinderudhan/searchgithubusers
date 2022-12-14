@@ -1,7 +1,7 @@
 {
   "name": "search-github-users",
   "version": "0.1.0",
-  "homepage": "https://dabinderudhan.github.io/searchgithubusers",
+  "homepage": "https://dabinderudhan.github.io/",
   "private": false,
   "dependencies": {
     "@auth0/auth0-react": "^1.12.0",

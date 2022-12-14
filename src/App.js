@@ -4,10 +4,10 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 function App() {
   return (
     <AuthWrapper>
-      <Router basename="/searchgithubusers">
+      <Router>
         <Routes>
           <Route
-            path="/searchgithubusers"
+            path="/"
             element={
               <PrivateRoute>
                 <Dashboard />
@@ -15,7 +15,7 @@ function App() {
             }
           />
           <Route path="/login" element={<Login />} />
-          <Route path="/searchgithubusers/*" element={<Error />} />
+          <Route path="/*" element={<Error />} />
         </Routes>
       </Router>
     </AuthWrapper>
