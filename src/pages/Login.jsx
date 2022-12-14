@@ -1,30 +1,34 @@
-import { useState } from "react";
+// import { useState } from "react";
+// import { useGlobalContext } from "../context/context";
 import { useAuth0 } from "@auth0/auth0-react";
-import { useGlobalContext } from "../context/context";
 import styled from "styled-components";
 import loginImg from "../images/login-img.svg";
 
 const Login = () => {
+  const { loginWithRedirect } = useAuth0();
+  /*
   const [githubUsername, setGithubUsername] = useState("");
   const { searchGithubUser } = useGlobalContext();
-  const { loginWithRedirect } = useAuth0();
 
   // console.log(useAuth0());
+
+  // console.log(loginWithRedirect);
 
   const handleSubmit = (e) => {
     e.preventDefault();
     if (githubUsername) {
+      console.log(githubUsername);
       searchGithubUser(githubUsername);
-      setGithubUsername("");
+      // setGithubUsername("");
     }
   };
-
+*/
   return (
     <Wrapper>
       <div className="container">
         <img src={loginImg} alt="github-user" />
         <h1>github user</h1>
-        <form onSubmit={handleSubmit}>
+        {/* <form onSubmit={handleSubmit}>
           <input
             type="text"
             placeholder="enter your github username"
@@ -32,10 +36,10 @@ const Login = () => {
             onChange={(e) => setGithubUsername(e.target.value)}
             required
           />
-          <button className="btn" onClick={loginWithRedirect}>
-            Log In / Sign Up
-          </button>
-        </form>
+        </form> */}
+        <button className="btn" onClick={loginWithRedirect}>
+          Log In / Sign Up
+        </button>
       </div>
     </Wrapper>
   );
