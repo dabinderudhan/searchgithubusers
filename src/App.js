@@ -7,7 +7,7 @@ function App() {
       <Router basename="/searchgithubusers">
         <Routes>
           <Route
-            path="/dashboard"
+            path="/searchgithubusers"
             element={
               <PrivateRoute>
                 <Dashboard />
@@ -15,7 +15,7 @@ function App() {
             }
           />
           <Route path="/login" element={<Login />} />
-          <Route path="/*" element={<Error />} />
+          <Route path="/searchgithubusers/*" element={<Error />} />
         </Routes>
       </Router>
     </AuthWrapper>
