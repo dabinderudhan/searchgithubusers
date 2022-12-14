@@ -4,10 +4,10 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 function App() {
   return (
     <AuthWrapper>
-      <Router>
+      <Router basename="/searchgithubusers">
         <Routes>
           <Route
-            path="/"
+            path="/searchgithubusers"
             element={
               <PrivateRoute>
                 <Dashboard />
