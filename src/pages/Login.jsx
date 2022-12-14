@@ -13,7 +13,10 @@ const Login = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    searchGithubUser(githubUsername);
+    if (githubUsername) {
+      searchGithubUser(githubUsername);
+      setGithubUsername("");
+    }
   };
 
   return (
@@ -56,8 +59,10 @@ const Wrapper = styled.section`
   form {
     display: flex;
     gap: 1rem;
+    justify-content: center;
   }
   input {
+    flex: 1;
     border-color: transparent;
     outline-color: var(--clr-grey-10);
     letter-spacing: var(--spacing);
