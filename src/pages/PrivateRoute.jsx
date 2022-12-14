@@ -9,7 +9,7 @@ const PrivateRoute = ({ children }) => {
   // console.log({ isAuthenticated, user });
 
   if (!isUser) {
-    return <Navigate to="/search-github-users/login" />;
+    return <Navigate to="/login" />;
   }
 
   return children;

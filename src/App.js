@@ -7,14 +7,14 @@ function App() {
       <Router>
         <Routes>
           <Route
-            path="/search-github-users"
+            path="/"
             element={
               <PrivateRoute>
                 <Dashboard />
               </PrivateRoute>
             }
           />
-          <Route path="/search-github-users/login" element={<Login />} />
+          <Route path="/login" element={<Login />} />
           <Route path="*" element={<Error />} />
         </Routes>
       </Router>
