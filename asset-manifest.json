@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/searchgithubusers/static/css/main.fafb95be.css",
-    "main.js": "/searchgithubusers/static/js/main.de045e81.js",
+    "main.js": "/searchgithubusers/static/js/main.d79f60e4.js",
     "static/media/preloader.gif": "/searchgithubusers/static/media/preloader.a6525050b19ec22d72cd.gif",
     "static/media/login-img.svg": "/searchgithubusers/static/media/login-img.45d3b74fbb4ac483314eef377e006a54.svg",
     "index.html": "/searchgithubusers/index.html"
   },
   "entrypoints": [
     "static/css/main.fafb95be.css",
-    "static/js/main.de045e81.js"
+    "static/js/main.d79f60e4.js"
   ]
 }
