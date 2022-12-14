@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/search-github-users/static/css/main.fafb95be.css",
-    "main.js": "/search-github-users/static/js/main.40fabc75.js",
+    "main.js": "/search-github-users/static/js/main.44046af2.js",
     "static/media/preloader.gif": "/search-github-users/static/media/preloader.a6525050b19ec22d72cd.gif",
     "static/media/login-img.svg": "/search-github-users/static/media/login-img.45d3b74fbb4ac483314eef377e006a54.svg",
     "index.html": "/search-github-users/index.html"
   },
   "entrypoints": [
     "static/css/main.fafb95be.css",
-    "static/js/main.40fabc75.js"
+    "static/js/main.44046af2.js"
   ]
 }
