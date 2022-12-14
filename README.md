@@ -1,3 +1,29 @@
+### To deploy project to gh-pages
+
+- add following line in package.json =>
+
+```json
+"homepage": "https://{username.github.io}/{repository name}"
+```
+
+- in index.js file add the github profile name in redirectUri
+
+```js
+redirectUri={window.location.origin + "/{repository name}"}
+```
+
+- in app.js file add basename prop in the router element
+
+```jsx
+<Router basename="/searchgithubusers">
+```
+
+- in the logout link as well you need to add the repositry name
+
+```jsx
+logout({ returnTo: window.location.origin + "/searchgithubusers" });
+```
+
 ## Starter Project
 
 - css provided (global styles, styled components)
