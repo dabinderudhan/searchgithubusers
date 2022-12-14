@@ -17,7 +17,11 @@ const Navbar = () => {
         </h4>
       )}
       {isUser ? (
-        <button onClick={() => logout({ returnTo: window.location.origin })}>
+        <button
+          onClick={() =>
+            logout({ returnTo: window.location.origin + "/searchgithubusers" })
+          }
+        >
           logout
         </button>
       ) : (
