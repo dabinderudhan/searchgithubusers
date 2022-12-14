@@ -11,7 +11,7 @@ root.render(
     <Auth0Provider
       domain="dev-xqb7g47wh6xadx45.us.auth0.com"
       clientId="LGyFurtO5vsealsHZppqJxGYRJL2jHIu"
-      redirectUri={"https://dabinderudhan.github.io/searchgithubusers"}
+      redirectUri={window.location.origin + "/searchgithubusers"}
       cacheLocation="localstorage"
     >
       <GithubProvider>
