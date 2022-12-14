@@ -7,7 +7,7 @@ function App() {
       <Router basename="/searchgithubusers">
         <Routes>
           <Route
-            path="/"
+            path="/searchgithubusers"
             element={
               <PrivateRoute>
                 <Dashboard />
