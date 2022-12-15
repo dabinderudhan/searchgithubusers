@@ -7,28 +7,44 @@ import loginImg from "../images/login-img.svg";
 const Login = () => {
   const { loginWithRedirect } = useAuth0();
   /*
+  const { getAccessTokenSilently } = useAuth0();
   const [githubUsername, setGithubUsername] = useState("");
-  const { searchGithubUser } = useGlobalContext();
+  // const { searchGithubUser } = useGlobalContext();
 
   // console.log(useAuth0());
 
-  // console.log(loginWithRedirect);
-
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (githubUsername) {
-      console.log(githubUsername);
-      searchGithubUser(githubUsername);
-      // setGithubUsername("");
-    }
+    // if (githubUsername) {
+    //   // console.log(githubUsername);
+    // searchGithubUser(githubUsername);
+    // setGithubUsername("");
+    // }
   };
-*/
+
+  const handleClick = async () => {
+    const token = await getAccessTokenSilently({
+      audience: "https://dev-xqb7g47wh6xadx45.us.auth0.com/api/v2/",
+      scope: "read:products write:products",
+      context: {
+        productId: githubUsername,
+      },
+    });
+
+    const response = await fetch(
+      "https://dev-xqb7g47wh6xadx45.us.auth0.com/api/v2/products",
+      { headers: { Authorization: `Bearer ${token}` } }
+    );
+  };
+  */
+
   return (
     <Wrapper>
       <div className="container">
         <img src={loginImg} alt="github-user" />
         <h1>github user</h1>
-        {/* <form onSubmit={handleSubmit}>
+        {/*         
+        <form onSubmit={handleSubmit}>
           <input
             type="text"
             placeholder="enter your github username"
